@@ -1,0 +1,78 @@
+.login{
+    position: absolute;
+    top:30%;
+    left:33%;
+    width: 350px;
+    height: 286px;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0);
+    transform: rotate(-360deg);
+    padding: 30px;
+}
+
+.login-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top:-50px;
+    left: calc(50%,-50%);
+}
+
+.login h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.login label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.login input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login input[type="text"],input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.login input[type="submit"]{
+    border:none;
+    outline: none;
+    height: 40px;
+    background-color: aqua;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+
+.login input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: darkcyan;
+    color: antiquewhite;
+}
+
+.login a{
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: black;
+}
+.login:hover{
+    color: blanchedalmond;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/ca5b4e33f6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/signup.css">
+    <link rel="stylesheet" href="./css/cart.css">
+
+    <script src="js/app.js" defer></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-storage.js"></script>
+   
+    <title>Michaels</title>
+</head>
+<body id="homeage">
+    <!-- NavBar -->
+    <div class="navbar">
+        <div class="navbar-center">
+            <div class="#">
+                <span class="nav-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <h1 class="navbar-title">
+                    Michaels
+                </h1>
+            </div>
+            <div class="navbar-search">
+                <label for="search" class="search-name">Search</label>
+                <input type="text" name="search" id="search" class="search-input" placeholder="Search...">
+            </div>
+            <div class="navbar-login">
+                <ul>
+                    <li>
+                        <a href="#" class="login-user">Login</a>
+                    </li>
+                    <li>
+                        <a href="#" class="login-signup">sign up</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cart-btn">
+                <span class="nav-icon">
+                    <i class="fas fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">10</div>
+            </div>
+        </div>
+    </div>
+    <!-- End of NavBar -->
+
+    <!-- image -->
+    <div >
+        <img src="./img/media-0T0YfZtRQNZDqYT4.png" alt="" srcset="" class="main-image">
+    </div>
+    <!-- the end image -->
+
+     <!-- hero -->
+    <!-- <div class="hero">
+        <div class="banner">
+            <button class="banner-btn">shop now</button>
+        </div>
+    </div> -->
+    <!-- end the hero -->
+
+    <!-- cart -->
+            <div class="car-overlay">
+        <div class="cart">
+            <span class="close-cart">
+                <i class="fas fa-window-close"></i>
+            </span>
+            <h2 class="cart-yourcart">your cart</h2> 
+            <div class="cart-content">
+                <!-- cart item -->
+                <div class="cart-item">
+                    <!-- <img src="./img/clothing.jpg" alt="product" srcset="" class="cart-item-img">
+                    <div>
+                        <h4 class="cart-item-name">queen bed</h4>
+                        <h5 class="cart-item-price">$9.00</h5>
+                        <span class="remove-item">Remove</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-chevron-up"></i>
+                        <p class="item-amount">1</p>
+                        <i class="fas fa-chevron-down"></i>
+                    </div> -->
+                </div>
+                <!-- end of cart item -->
+            </div>
+            <div class="cart-footer">
+                <h3>your total: $<span class="cart-total">0</span></h3>
+                <button class="clear-cart banner-btn">Clear</button>
+            </div>
+        </div>
+    </div>
+        <!-- End of cart item -->
+    <!-- End of cart -->
+
+    <!-- Products -->
+    <section class="products">
+        <div class="section-title">
+            <h2 class="section-title-child">Our products</h2>
+        </div>
+        <div class="products-center">
+            <!-- <article class="product">
+                <div class="img-container">
+                    <img src="./images/product-1.jpeg" alt="" srcset="" class="product-img">
+                    <button class="bag-btn" data-id="1">
+                        <i class="fas fa-shopping-cart"></i>
+                        add to bag
+                    </button>
+                </div>
+                <h3 class="product-name">Clothing</h3>
+                <h4 class="product-price">$30</h4>
+            </article> -->
+        </div>
+    </section>
+    
+    <!-- End of Products -->
+
+    
+    <!-- Login box  -->
+    <div class="login">
+        <img src="./img/login.png" alt="" class="login-img">
+        <h1>Login Here</h1>
+        <form class="login-form">
+            <label for="name">Email</label>
+            <input type="text" name="email" id="email" class="useremail">
+            <label for="psw">Password</label>
+            <input type="password" name="psw" id="psw" class="password">
+            <input type="submit" value="Sumbit" id="btn-login">
+            <a href="#">Lost your password</a>
+            <a href="#">Don't have any account</a>          
+        </form>
+    </div>
+
+    <!-- End of login -->
+
+    <!-- Sign up -->
+    <div class="signup">
+        <!-- <div class="form-container">
+            <span class="form-heading">Sign up</span> -->
+            <form action="" class="form">
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="" id="#userEmail" placeholder="Email...">
+                    <span class="bar"></span>                   
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="" id="#userPassword" placeholder="Password...">
+                    <span class="bar"></span>                   
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="" id="#cPassword" placeholder="Confirm Password...">
+                    <span class="bar"></span>                   
+                </div>
+                <div class="input-group">
+                   <button>
+                       <i class="fab fa-telegram-plane" id="btn-signup"></i>
+                   </button>                 
+                </div>
+                <div class="switch-login">
+                    <a href="#">Already have an account?</a>
+                </div>
+            </form>
+        <!-- </div> -->
+    </div>
+    <!-- End of sign up -->
+    <script src="js/index.js"></script>
+    <script>
+        firebase.auth().onAuthStateChanged(function(user){
+            if(user){
+                //window.location.href="index.html";
+            }
+        });
+    </script>
+
+</body>
+</html>

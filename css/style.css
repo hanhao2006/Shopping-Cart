@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Squada+One&display=swap');
+
+:root{
+    --primaryColor:#f09d51;
+    --mainWith:#fff;
+    --mainPick:#fa8072;
+    --mainLightgreen:#00fa9a;
+    --mainPurple:#f41adf;
+    --mainRed:#f60505;
+    --mainSpacing:0.1rem;
+    --mainTransition:all 0.3s linear;
+    --mainTitle:'Squada One', cursive; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-image{
+    overflow: hidden;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+
+.main-image-blur{
+    filter: blur(10px);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(255, 255, 255,0.2);
+    z-index: 1;
+}
+
+.navbar-center{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    /* padding: 0 1,5rem; */
+    color: var(--mainPurple);
+   
+}
+
+.nav-icon{
+    font-size: 1.5rem;
+}
+
+.navbar-title{
+    display: inline;
+    font-family: var(--mainTitle);
+    font-size: 45px;
+    background: linear-gradient(to right,var(--mainPick),var(--mainLightgreen),var(--mainPurple));
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-left: 30px;
+    letter-spacing: var(--mainSpacing);
+}
+.navbar-search{
+    margin-left: 12.5rem;
+}
+
+.search-name{
+    font-family: var(--mainTitle);
+    font-size: 25px;
+    margin-right: 1.5rem;
+}
+
+.search-input{
+    background: transparent;
+    overflow: visible;
+    border: none;
+    border-bottom: 1px solid var(--primaryColor);
+    font-size: 15px;
+    text-align: left;  
+}
+
+.navbar-login{
+    margin-left: 6.5rem;
+}
+
+.navbar-login ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-login ul li{
+    display: inline-table;
+}
+
+.navbar-login ul li a{
+    text-decoration: none;
+    letter-spacing: var(--mainSpacing);
+    font-family: var( --mainTitle);
+    font-size: 20px;
+    padding-right: 30px;
+    color: var(--mainPick);
+    text-transform: uppercase;
+    transition: var(--mainLightgreen);
+    
+}
+.navbar-login ul li a:hover {
+   
+    background: transparent;
+    color: var(--mainLightgreen);
+    
+}
+
+.cart-btn{
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.cart-items{
+    position: absolute;
+    top:-8px;
+    right:-8px;
+    background: var(--primaryColor);
+    padding: 0 5px;
+    border-radius: 30px;
+    color: darkblue;
+}
+
+.hero {
+  position: absolute;
+  top:50px;
+  left:700px;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner {
+  text-align: center;
+  background: rgb(255, 255, 255, 0.2);
+  display: inline-block;
+  padding: 2rem;
+}
+.banner-title {
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 3rem;
+}
+.banner-btn {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  font-size: 1rem;
+  background: var(--primaryColor);
+  color: var(--mainBlack);
+  border: 1px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+.banner-btn:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+
+
+/* products */
+
+.products{
+  padding: 10rem 0;
+}
+
+.section-title-child{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
+}
+.products-center{
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+}
+
+.img-container{
+    position: relative;
+    overflow: hidden;
+}
+
+.bag-btn{
+    position: absolute;
+    top:70%;
+    right:0;
+    background: var(--primaryColor);
+    border: none;
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    letter-spacing: var(--mainSpacing);
+    font-weight: bold;
+    transition: var(--mainTransition);
+    transform: translateX(101%);
+    cursor:pointer;
+
+}
+
+.bag-btn:hover{
+    color:var(--mainWith);
+}
+
+.fa-shopping-cart{
+    margin-right: 0.5rem;
+}
+
+.img-container:hover .bag-btn{
+    transform: translateX(0);
+}
+
+.product-img{
+    display: block;
+    width: 100%;
+    
+    min-height: 12rem;
+    transition: var(--mainTransition);
+}
+.img-container:hover .product-img{
+    opacity: 0.5;
+}
+.product-name{
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    letter-spacing: var(--mainTransition);
+    text-align: center;
+}
+
+.product-price{
+    margin-top: 0.7rem;
+    letter-spacing: var(--mainSpacing);
+    color: var(--primaryColor);
+    text-align: center;
+}
+/* end of products */
+
+
+

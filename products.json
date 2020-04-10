@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Studio LaceWomen's Hoodie",
+        "price": 55.00,
+        "image": { "fields": { "file": { "url": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_260,h_260/global/518918/01/mod01/fnd/PNA/fmt/png/Studio-Lace-Women's-Hoodie" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "SHIFT Women's Hoodie",
+        "price": 65.00,
+        "image": { "fields": { "file": { "url": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_260,h_260/global/518245/02/mod01/fnd/PNA/fmt/png/SHIFT-Women's-Hoodie" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Recheck Women's Crewneck Sweatshirt",
+        "price": 60.00,
+        "image": { "fields": { "file": { "url": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_260,h_260/global/597892/01/mod01/fnd/PNA/fmt/png/Recheck-Women's-Crewneck-Sweatshirt" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "Evide Women's AOP Hoodie",
+        "price": 65.00,
+        "image": { "fields": { "file": { "url": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_260,h_260/global/597078/51/mod01/fnd/PNA/fmt/png/Evide-Women's-AOP-Hoodie" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "Tailored for Sport Women's Hoodie",
+        "price": 65.00,
+        "image": { "fields": { "file": { "url": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_260,h_260/global/596262/01/mod01/fnd/PNA/fmt/png/Tailored-for-Sport-Women's-Hoodie" } } }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "PUMA Sport Women's Crewneck Sweatshirt",
+        "price": 55.00,
+        "image": { "fields": { "file": { "url": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_260,h_260/global/598128/02/fnd/PNA/fmt/png/PUMA-Sport-Women's-Crewneck-Sweatshirt" } } }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "NU-TILITY Women's Full Zip Hoodie",
+        "price": 70.99,
+        "image": { "fields": { "file": { "url": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_260,h_260/global/854685/73/mod01/fnd/PNA/fmt/png/Essentials+-Women's-Cropped-Hoodie" } } }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "Women's Elastic Logo Midlayer",
+        "price": 35.99,
+        "image": { "fields": { "file": { "url": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_260,h_260/global/518940/03/mod01/fnd/PNA/fmt/png/Women's-Elastic-Logo-Midlayer" } } }
+      }
+    }
+  ]
+}
